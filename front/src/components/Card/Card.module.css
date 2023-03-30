@@ -1,0 +1,83 @@
+.Carta{
+    /* display:block;  */
+    width: fit-content;
+    margin-left: 0;
+    box-shadow: 0px 10px 10px -6px black;
+    background-color: #9fd3c7;
+    padding: 1em;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.Imagen{
+    display: flex;
+    border-radius: 50px;
+     height: 15rem;
+     margin-left: 20px;  
+   
+   
+}
+.Name{
+    
+    font-size: 2rem;
+    color:#385170;
+    font-style:inherit;
+    justify-content:center;
+}
+.Specie{
+
+font-size: 1.3rem;
+color:#385170;
+justify-content: center;
+}
+
+.Gender{
+
+font-size :1.3rem;
+color: #385170;
+justify-content: center;
+}
+.Boton{
+    display: flex;
+    justify-content: center;
+    opacity:0.5 ;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: red;
+  
+    
+    
+ }
+ .Boton:hover{
+    box-shadow: 0px 10px 10px -6px black;
+    background-color: bisque;
+ }
+
+ .BotonRojo{
+    border: solid;
+    border-color: #9fd3c7;
+    background-color: #9fd3c7;
+    border-radius: 20px;
+    transition: transform .3s;
+    display: flex;
+    margin-left: 15rem;
+     
+   
+
+ }
+ .BotonRojo:hover{
+   transform: scale(1.5);
+ }
+
+ .BotonBlanco{
+    border: solid;
+    border-color: #9fd3c7;
+    background-color: #9fd3c7;
+    transition: transform .3s;
+    margin-left: 15rem;
+ }
+
+ .BotonBlanco:hover{
+    transform: scale(1.5);
+ }

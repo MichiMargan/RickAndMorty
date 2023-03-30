@@ -1,0 +1,8 @@
+export const AGREGAR_FAVORITOS = "AGREGAR_FAVORITOS"
+export const ELIMINAR_FAVORITOS = "ELIMINAR_FAVORITOS"
+export const FILTRAR = "FILTRAR"
+export const ORDENAR = "ORDENAR"
+export const TODOS = "TODOS"
+export const ASCENDENTE = "ASCENDENTE"
+export const DESCENDENTE = "DESCENDENTE"
+export const LIMPIAR = "LIMPIAR"

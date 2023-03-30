@@ -1,0 +1,18 @@
+.DetailConteiner{
+    display:block;
+    /* background-color: rgb(68, 171, 126); */
+    width: fit-content;
+    height: fit-content;
+    border-radius: 12px;
+    background-image:url(https://cdn.forbes.com.mx/2020/07/Rick-and-morty--640x360.jpg) ;
+}
+h2{
+    display: grid;
+    border-width: 15px;
+    color: rgb(11, 14, 13);
+    justify-content: space-around;
+}
+img{
+    border-radius: 20px;
+    box-shadow:10px 10px 5px #393232;
+}

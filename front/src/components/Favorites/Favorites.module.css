@@ -1,0 +1,23 @@
+
+
+.Fondo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Filtro{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Ascendente{
+background-color: rgb(102, 161, 212);
+color: antiquewhite;
+
+}
+
+.Descendente{
+    background-color: rgb(102, 161, 212);
+    color: antiquewhite;
+}

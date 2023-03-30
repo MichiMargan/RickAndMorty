@@ -1,0 +1,24 @@
+.NavBar{
+    background-color:#235784;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+    
+}
+.Active{
+    display: flex;
+   justify-content: space-between;
+    color: beige;
+    flex-direction: row;
+    position: sticky;
+    text-decoration: none;
+    
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-right: 10px;
+}

@@ -1,0 +1,10 @@
+.Personaje{
+    display: flex;
+    flex-direction:row ;
+    justify-content:space-between;
+    width: auto;
+    margin: auto;
+    /* background-color: black; */
+    padding: 1em;
+    border-radius: 10px;
+} 
