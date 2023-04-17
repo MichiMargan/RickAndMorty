@@ -1,7 +1,7 @@
 import style from "./Card.module.css"
 import { Link } from "react-router-dom";
 import { connect, useDispatch} from "react-redux";
-//import { agregarFavoritos, eliminarFavoritos} from "../redux/actions";
+ import {eliminarFavoritos} from "../redux/actions";
 import { useState,useEffect } from "react";
 import axios from "axios";
 
@@ -13,35 +13,28 @@ function Card({id,name,species,gender,image,onClose,myFavorites}) {
    const [isFav, setIsFav]=useState(false)
    const dispatch = useDispatch()
 
-    
+    //agrego personajes a fav
    const agregarFavoritos = (character)=>{
       axios.post("http://localhost:3001/rickandmorty/fav",character) 
       .then(res => console.log("character agregado"))        
    }
    
-   const eliminarFavoritos = async (id)=>{
-     await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
-      dispatch(eliminarFavoritos()) //pido actulializacion 
-      alert("Eliminado con exito")
-   }
 
-   const mostrarFav= async (character)=>{
-      try{ 
-        const response= await axios.get(`http://localhost:3001/rickandmorty/fav/`)
-        
-      dispatch(agregarFavoritos())  
-      }catch{
 
-      }
-     
-       
-    }
+   // const eliminarFavoritos = async (id)=>{
 
+   //    await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
+   //    dispatch(agregarFavoritos()) //pido actulializacion 
+   //    alert("Eliminado con exito")
+    
+   // }
+
+   
 
    const handleFavorite = () =>{
       if(isFav){ 
          setIsFav(false)
-         eliminarFavoritos(id)
+       dispatch(eliminarFavoritos(id))
       }
       else{
          setIsFav(true)

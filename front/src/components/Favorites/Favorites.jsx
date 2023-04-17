@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux"
 import Card from "../Card/Card"
 import style from "./Favorites.module.css"
-import { orderCards, filterCards, agregarFavoritos } from "../redux/actions"
+import { orderCards, filterCards, agregarFavoritos,limpiar } from "../redux/actions"
 import { useEffect } from "react"
 
 
@@ -22,6 +22,7 @@ const Favorites = () =>{
     }
 
     useEffect(()=>{
+        dispatch(limpiar())
         dispatch(agregarFavoritos())
     },[dispatch])
     // const todos = (event)=>{

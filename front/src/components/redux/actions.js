@@ -2,7 +2,7 @@ import {AGREGAR_FAVORITOS, ELIMINAR_FAVORITOS, FILTRAR, ORDENAR,LIMPIAR} from ".
 import axios from "axios";
 
 
-
+//me trae los personajes del servidor al estado
 
 export const agregarFavoritos = () =>{
       return async (dispatch)=>{
@@ -23,8 +23,8 @@ export const eliminarFavoritos = (id) =>{
     return async (dispatch)=>{
         const URLBASE = "http://localhost:3001/rickandmorty/fav"
         try {
-           await axios.delete(`URLBASE ${id}`)
-          dispatch({type: ELIMINAR_FAVORITOS,payload: id})
+           await axios.delete(`${URLBASE}/${id}`)
+          dispatch({type: ELIMINAR_FAVORITOS,payload:id})
 
           } catch (error) {
             console.log(error)
@@ -35,8 +35,8 @@ export const filterCards = (gender) =>{
 return{ type:FILTRAR, payload:gender}
 }
 
-export const orderCards = (id) =>{
-return {type: ORDENAR, payload: id}
+export const orderCards = (value) =>{
+return {type: ORDENAR, payload: value}
 }
 
 export const limpiar = ()=>{

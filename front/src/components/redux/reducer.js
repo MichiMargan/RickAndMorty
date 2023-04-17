@@ -33,7 +33,7 @@ switch(action.type){
        })]
         }
    
-    case LIMPIAR:  //falta
+    case LIMPIAR: 
         return {...state, myFavorites:[], allCharacters: []}
 
     default:
